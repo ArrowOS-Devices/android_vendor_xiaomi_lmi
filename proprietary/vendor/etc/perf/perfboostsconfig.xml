@@ -145,6 +145,36 @@
                        0x40C00000, 0x2, 0x43400000, 0x1F40, 0x40C74000, 0xFF, 0x40408000, 0x63,
                        0x41000000, 3, 0x40CA8000, 2" />
 
+     <!--Horizontal Scroll boost-->
+        <!-- CPUBW_MIN_FREQ resource opcode, value-->
+        <!-- CPUBOOST_MIN_FREQ BIG CORE resource opcode, value -->
+        <!-- CPUBOOST_MIN_FREQ LITTLE Core resource opcode, value -->
+        <!-- CPUBOOST_MIN_FREQ PRIME Core resource opcode, value -->
+        <!-- SCHEDBOOST resource opcode, value-->
+        <!-- SCHED_BUSY_HYSTERSIS_CPU_MASK resource opcode, value-->
+        <!-- LPM Bias resource opcode, value-->
+
+        <!-- Type="2", Horizontal Scroll boost -->
+        <Config
+            Id="0x00001080" Type="2" Enable="true" Target="kona" Fps="60"
+            Resources="0x43000000, 0x26, 0x40800000, 1651, 0x40800100, 1516, 0x40800200, 1766,
+                       0x40C00000, 2, 0x40C74000, 0xFF, 0x40408000, 0x63" />
+
+        <Config
+            Id="0x00001080" Type="2" Enable="true" Target="kona" Fps="90"
+            Resources="0x43010000, 0x26, 0x40800000, 1651, 0x40800100, 1516, 0x40800200, 1766,
+                       0x40C00000, 2, 0x40C74000, 0xFF, 0x40408000, 0x63" />
+
+        <Config
+            Id="0x00001080" Type="2" Enable="true" Target="kona" Fps="120"
+            Resources="0x43010000, 0x26, 0x40800000, 1900, 0x40800100, 1516, 0x40800200, 1862,
+                       0x40C00000, 2, 0x40C74000, 0xFF, 0x40408000, 0x63" />
+
+        <Config
+            Id="0x00001080" Type="2" Enable="true" Target="kona" Fps="144"
+            Resources="0x43010000, 0x26, 0x40800000, 1900, 0x40800100, 1516, 0x40800200, 1862,
+                       0x40C00000, 2, 0x40C74000, 0xFF, 0x40408000, 0x63" />
+
     <!--Prefling Scroll boost-->
         <!-- LLCBW_MIN_FREQ resource opcode, value-->
         <!-- CPUBOOST_MIN_FREQ BIG CORE resource opcode, value -->
